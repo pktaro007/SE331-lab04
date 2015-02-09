@@ -1,0 +1,27 @@
+<div class="row-fluid">
+    <form ng-submit="addNewText()">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Sidebar content-->
+                input text: <input ng-model="inputText" placeholder="hello">
+            </div>
+            <div class="col-md-2">
+                <br/>
+                <button type="submit" class="btn btn-primary">submit</button>
+            </div>
+            <div class="col-md-6">
+                <br/>
+                <!--Body content-->
+                <table class="table table-striped">
+                    <tr>
+                      <th>Current Text</th>
+                    </tr>
+                    <tr>
+                        <td><div ng-bind-html="resultText"></div></td>
+                    </tr>
+                </table>
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>

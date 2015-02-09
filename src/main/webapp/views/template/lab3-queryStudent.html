@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <form ng-submit="getStudentFromGPA()">
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Sidebar content-->
+            input gpa: <input ng-model="gpa">
+        </div>
+        <div class="col-md-1">
+            <button type="submit" class="btn btn-primary">submit</button>
+        </div>
+        <div class="col-md-8">
+            <!--Body content-->
+            <table class="table table-striped">
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>GPA</th>
+                </tr>
+                <tr ng-repeat="student in students">
+                    <td>{{$index+1}}</td>
+                    <td>{{student.name}}</td>
+                    <td>{{student.surname}}</td>
+                    <td>{{student.gpa}}</td>
+                </tr>
+            </table>
+            </ul>
+        </div>
+    </div>
+    </form>
+</div>
